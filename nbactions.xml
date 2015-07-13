@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <actionName>CUSTOM-FastTests</actionName>
+        <displayName>FastTests</displayName>
+        <goals>
+            <goal>test -Dgroups="ca.danielvega.learning.seleniumforcrudsimple.junit.groups.FastTests"</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-CrudLinkTests</actionName>
+        <displayName>CrudLinkTests</displayName>
+        <goals>
+            <goal>test -Dgroups="ca.danielvega.learning.seleniumforcrudsimple.junit.groups.CrudLinkTests"</goal>
+        </goals>
+    </action> 
+    <action>
+        <actionName>CUSTOM-SpecialTests</actionName>
+        <displayName>SpecialTests</displayName>
+        <goals>
+            <goal>test -Dgroups="ca.danielvega.learning.seleniumforcrudsimple.junit.groups.SpecialTests"</goal>
+        </goals>
+    </action>                 
+    <action>
+        <actionName>CUSTOM-SmockTests</actionName>
+        <displayName>SmockTests</displayName>
+        <goals>
+            <goal>test -Dgroups="ca.danielvega.learning.seleniumforcrudsimple.junit.groups.SmockTests"</goal>
+        </goals>
+    </action>
+        
+        
+        
+    <action>
+        <actionName>CUSTOM-pSmockTests</actionName>
+        <displayName>PsmockTests</displayName>
+        <goals>
+            <goal>test -PsmockTests</goal>
+        </goals>
+    </action>
+    
+    <action>
+        <actionName>CUSTOM-pCrudLinkTests</actionName>
+        <displayName>PcrudLinkTests</displayName>
+        <goals>
+            <goal>test -PcrudLinkTests</goal>
+        </goals>
+    </action>    
+    
+    
+    <action>
+        <actionName>CUSTOM-pSpecialTests</actionName>
+        <displayName>PspecialTests</displayName>
+        <goals>
+            <goal>test -PspecialTests</goal>
+        </goals>
+    </action>    
+
+    
+    <action>
+            <actionName>CUSTOM-clean install skipTests=true</actionName>
+            <displayName>clean install skipTests=true</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>install</goal>
+            </goals>
+            <properties>
+                <skipTests>true</skipTests>
+            </properties>
+        </action>    
+
+    
+    <action>
+            <actionName>CUSTOM-assembly</actionName>
+            <displayName>assembly</displayName>
+            <goals>
+                <goal>assembly:assembly</goal>
+                <goal>-DdescriptorId=jar-with-dependencies</goal>
+            </goals>
+            <properties>
+                <skipTests>true</skipTests>
+            </properties>
+        </action>   
+        
+        
+  
+</actions>
